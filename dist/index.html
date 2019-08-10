@@ -5,41 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber eats</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
     <header class="header">
-      <div class="logo">
-        <a href="#" class="logo__link">
-          <img src="./images/logo.svg" class="logo__image" alt="uber eats logo">
-        </a>
-      </div>
-      <button class="button">
+      <div class="header-main">
+        <div class="header-main__logo">
+          <a href="#" class="logo__link">
+            <img src="./images/logo.svg" class="logo__image" alt="uber eats logo">
+          </a>
+        </div>
+        <button class="button-time-delivery">
           ASAP
-      </button>
-      <span class="text">
-        to
-      </span>
-      <div class="input whith--icon">
-        <input class="input" type="text" placeholder="ul. Tarasivska St, 16">
-        <img src="./images/icons/location.svg" class="icon icon--small" alt="location icon">
-      </div>
-      <button class="button">
-        Sign In
-      </button>
-      <button class="button">
-        Register
-      </button>
-      <div class="icon-basket">
-        <a href="#">
+        </button>
+        <div class="input-location__hint">
+          to
+        </div>
+        <div class="input-location">
+          <input class="input-location__input" type="text" placeholder="ul. Tarasivska St, 16">
+          <a href="#" class="input-location__link">
+            <img src="./images/icons/location.svg" class="input-location__icon" alt="location icon">
+          </a>
+        </div>
+        <button class="button-sign-in">
+          Sign In
+        </button>
+        <button class="button-register">
+          Register
+        </button>
+        <a href="#" class="icon-basket">
           <img src="./images/icons/basket.svg" alt="basket">
         </a>
       </div>
+      <div class="header__search">
+        <a href="#" class="header__search-icon-link">
+          <img src="./images/icons/search.svg" alt="magnifying glass" class="header__search-icon">
+        </a>
+        <input class="header__search-input" type="text" placeholder="Search for restaurant or cuisine">
+      </div>
+      <div class="header__hidden">
+        <div class="button-time-delivery__hint">
+          When
+        </div>
+        <div class="input-location__hint">
+          to
+        </div>
+        <button class="button-time-delivery general--btn">
+          ASAP
+        </button>
+        </div>
+        <div class="input-location">
+          <div class="input-location__box">
+            <input class="input-location__input" type="text" placeholder="ul. Tarasivska St, 16">
+            <img src="./images/icons/location.svg" class="input-location__icon icon--small" alt="location icon">
+          </div>
+        </div>
+
+
+
     </header>
     <main class="main">
-      <div class="search">
-          <input class="input" type="text" placeholder="Search for restaurant or cuisine">
-          <img src="./images/icons/search.svg" class="icon icon--small" alt="search icon">
-      </div>
       <h1 class="catalog-title">
         Kyiv Restaurants
       </h1>

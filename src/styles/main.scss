@@ -2,9 +2,12 @@
 @import "fonts";
 @import "typography";
 @import "header";
-@import "main";
+@import "main-content";
 @import "footer";
 
 body {
-  background: $c-gray;
+  background: $main-color;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
 }
