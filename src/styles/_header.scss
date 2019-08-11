@@ -129,22 +129,30 @@
   }
 }
 
+.header-search-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .header-search {
   width: 956px;
+  height: 79px;
+  border-bottom: 1px solid #e0e0e0;
 
   .search {
     display: flex;
+    align-items: flex-end;
+    position: relative;
     padding-top: 40px;
-    height: 79px;
-    border-bottom: 1px solid #757575;
   }
 
   .search-input {
-    height: 24px;
+    //height: 24px;
     width: 100%;
     border: 0 solid transparent;
     font-size: 16px;
     line-height: 24px;
+    margin-left: 8px;
     color: #626262;
   }
 }
