@@ -9,39 +9,47 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-main">
-        <div class="header-main__logo">
-          <a href="#" class="logo__link">
-            <img src="./images/logo.svg" class="logo__image" alt="uber eats logo">
-          </a>
+      <div class="header-main-wrap">
+        <div class="header-main">
+          <div class="header-main__logo">
+            <a href="#" class="logo__link">
+              <img src="./images/logo.svg" class="logo__image" alt="uber eats logo">
+            </a>
+          </div>
+          <div class="delivery-section">
+            <button class="button-time-delivery">
+              ASAP
+            </button>
+            <div class="input-location-hint">
+              to
+            </div>
+            <div class="input-location">
+              <input class="input-location__input" type="text" placeholder="ul. Tarasivska St, 16">
+              <a href="#" class="input-location__link">
+                <img src="./images/icons/location.svg" class="input-location__icon" alt="location icon">
+              </a>
+            </div>
+          </div>
+          <div class="login-section">
+            <button class="button-sign-in">
+              Sign In
+            </button>
+            <button class="button-register">
+              Register
+            </button>
+            <a href="#" class="icon-basket">
+              <img src="./images/icons/basket.svg" alt="basket">
+            </a>
+          </div>
         </div>
-        <button class="button-time-delivery">
-          ASAP
-        </button>
-        <div class="input-location__hint">
-          to
-        </div>
-        <div class="input-location">
-          <input class="input-location__input" type="text" placeholder="ul. Tarasivska St, 16">
-          <a href="#" class="input-location__link">
-            <img src="./images/icons/location.svg" class="input-location__icon" alt="location icon">
-          </a>
-        </div>
-        <button class="button-sign-in">
-          Sign In
-        </button>
-        <button class="button-register">
-          Register
-        </button>
-        <a href="#" class="icon-basket">
-          <img src="./images/icons/basket.svg" alt="basket">
-        </a>
       </div>
-      <div class="header__search">
-        <a href="#" class="header__search-icon-link">
-          <img src="./images/icons/search.svg" alt="magnifying glass" class="header__search-icon">
-        </a>
-        <input class="header__search-input" type="text" placeholder="Search for restaurant or cuisine">
+      <div class="header-search">
+        <div class="search">
+          <a href="#" class="search-icon-link">
+            <img src="./images/icons/search.svg" alt="magnifying glass" class="search-icon">
+          </a>
+          <input class="search-input" type="text" placeholder="Search for restaurant or cuisine">
+        </div>
       </div>
       <div class="header__hidden">
         <div class="button-time-delivery__hint">
@@ -53,16 +61,13 @@
         <button class="button-time-delivery general--btn">
           ASAP
         </button>
-        </div>
         <div class="input-location">
           <div class="input-location__box">
             <input class="input-location__input" type="text" placeholder="ul. Tarasivska St, 16">
             <img src="./images/icons/location.svg" class="input-location__icon icon--small" alt="location icon">
           </div>
         </div>
-
-
-
+      </div>
     </header>
     <main class="main">
       <h1 class="catalog-title">
