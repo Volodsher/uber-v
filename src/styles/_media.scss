@@ -1,0 +1,26 @@
+@media (max-width: 1023px) {
+  header {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .catalog-content {
+    //grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat( auto-fill, minmax(100px, 1fr) );
+    justify-content: center;
+    justify-items: stretch;
+    min-width: 624px;
+  }
+
+  .header-search {
+    min-width: 624px;
+
+    &__wrap {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+}
