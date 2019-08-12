@@ -17,6 +17,7 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 32px;
+  padding-bottom: 30px;
   border-bottom: 1px solid#7d7d7d;
   font-size: 13px;
   line-height: 15px;
@@ -29,14 +30,25 @@
 
   &__first-column {
     flex-basis: 33%;
+
   }
 
   &__second-column {
     flex-basis: 33%;
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
   }
 
   &__third-column {
     flex-basis: 33%;
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 25px;
+    }
   }
 }
 
@@ -78,5 +90,17 @@
 
   &:hover &__content {
     display: block;
+  }
+}
+
+.hashtag-logo {
+  margin-top: 33px;
+  font-size: 16px;
+  line-height: 19px;
+
+  &__hash {
+    font-weight: 300;
+    margin-right: -2px;
+    color: #49a144;
   }
 }
