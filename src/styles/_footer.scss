@@ -147,3 +147,16 @@
     color: #49a144;
   }
 }
+
+.green-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 80px;
+  width: 80px;
+  background-color: #59bd5a;
+  border-radius: 2px;
+  bottom: 24px;
+  right: 16px;
+}
