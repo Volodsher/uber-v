@@ -11,6 +11,49 @@
     border-bottom: 1px solid#7d7d7d;
     padding: 56px 0 40px;
   }
+
+  &__stores-buttons {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid#7d7d7d;
+    padding: 40px;
+    align-items: center;
+  }
+
+  &__stores-buttons-apple {
+    margin-right: 20px;
+  }
+
+  &__stores-buttons-google {
+    margin-left: 20px;
+  }
+
+  &__last-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 11px;
+    line-height: 13px;
+    color: #fff;
+    padding: 40px 0;
+  }
+
+  &__last-row a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  &__last-row-first {
+    flex-basis: 33%;
+  }
+
+  &__last-row-second {
+    flex-basis: 33%;
+  }
+
+  &__last-row-third {
+    flex-basis: 33%;
+  }
 }
 
 .navigation {
