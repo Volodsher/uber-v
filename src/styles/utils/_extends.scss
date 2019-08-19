@@ -10,8 +10,8 @@
   border-radius: 2px;
   height: 40px;
 }
-/*
-.message {
-  @extend %message-shared;
+
+%center-width {
+  max-width: $general-width;
+  margin: 0 auto;
 }
-*/

@@ -1,23 +1,20 @@
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: #262626;
 
-  &__box {
-    width: $general-width;
-  }
-
   &__logo {
+    @extend %center-width;
+    padding: 56px 8px 40px;
     border-bottom: 1px solid#7d7d7d;
-    padding: 56px 0 40px;
   }
 
   &__stores-buttons {
+    @extend %center-width;
     display: flex;
     justify-content: center;
-    border-bottom: 1px solid#7d7d7d;
     padding: 40px;
     align-items: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid#7d7d7d;
   }
 
   &__stores-buttons-apple {
@@ -29,13 +26,18 @@
   }
 
   &__last-row {
+    @extend %center-width;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: 11px;
-    line-height: 13px;
+    font-size: $font_size-s;
+    line-height: $line_height-xs;
     color: #fff;
-    padding: 40px 0;
+    padding: 29px 0;
+  }
+
+  &__media {
+    margin-top: -5px;
   }
 
   &__last-row a {
@@ -43,108 +45,97 @@
     color: #fff;
   }
 
-  &__last-row-first {
-    flex-basis: 33%;
-  }
-
-  &__last-row-second {
-    flex-basis: 33%;
-  }
-
-  &__last-row-third {
+  &__last-row p {
     flex-basis: 33%;
   }
 }
 
 .navigation {
+  @extend %center-width;
   display: flex;
   flex-wrap: wrap;
   padding-top: 32px;
   padding-bottom: 30px;
-  border-bottom: 1px solid#7d7d7d;
-  font-size: 13px;
-  line-height: 15px;
+  font-size: $font_size-m;
+  line-height: $line_height-s;
   color: #fff;
+  border-bottom: 1px solid#7d7d7d;
 
   & a {
     text-decoration: none;
     color: #fff;
   }
 
-  &__first-column {
-    flex-basis: 33%;
-
-  }
-
-  &__second-column {
+  &__column {
     flex-basis: 33%;
 
     p {
       margin-top: 5px;
       margin-bottom: 25px;
     }
-  }
-
-  &__third-column {
-    flex-basis: 33%;
-
-    p {
-      margin-top: 5px;
-      margin-bottom: 25px;
-    }
-  }
-}
-
-.select-language {
-  position: relative;
-  display: flex;
-  align-items: center;
-  width: 227px;
-  height: 40px;
-  //pointer-events:
-  background-color: #3b3b3b;
-  border-radius: 2px;
-  font-size: 13px;
-  line-height: 15px;
-
-  &__content {
-    display: none;
-    position: absolute;
-    margin-top: 50px;
-    padding-left: 47px;
-    background-color: #3b3b3b;
-    min-width: 180px;
-    border-radius: 2px;
-    z-index: 1;
-  }
-
-  &__icon-world {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
-  &__icon-arrow {
-    margin-left: 104px;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &:hover &__content {
-    display: block;
   }
 }
 
 .hashtag-logo {
-  margin-top: 33px;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: $font_size-xl;
+  line-height: $line_height-m;
+  margin-bottom: 100px;
 
   &__hash {
     font-weight: 300;
     margin-right: -2px;
     color: #49a144;
+  }
+}
+
+.select-language {
+  position: relative;
+
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(https://volodsher.github.io/uber-v/images/icons/world.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 12px;
+    left: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 16px;
+    left: 205px;
+    width: 14px;
+    height: 8px;
+    background-image: url(https://volodsher.github.io/uber-v/images/icons/if_icon-ios7-arrow-back_211686.svg);
+    pointer-events: none;
+    text-align: center;
+    line-height: 38px;
+  }
+
+  &__choice {
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 12px 0 12px 48px;
+    width: 227px;
+    height: 40px;
+    border: none;
+    border-radius: 2px;
+    font-size: $font_size-m;
+    line-height: $line_height-s;
+    text-transform: uppercase;
+    appearance: button;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 33px;
+  }
+
+  &__choice:hover {
+    background-color: black;
   }
 }
 

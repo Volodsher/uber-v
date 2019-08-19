@@ -2,14 +2,14 @@
 @import "fonts";
 @import "typography";
 @import "header";
-@import "main-content";
 @import "footer";
 @import "media";
+@import "main-content";
 
 body {
   background: $main-color;
   padding: 0;
   margin: 0;
   font-family: Roboto, sans-serif;
-  display: relative;
+  min-width: 320px;
 }
