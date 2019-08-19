@@ -1,0 +1,54 @@
+.main {
+  @extend %center-width;
+  padding: 56px 8px 100px;
+}
+
+.catalog-content {
+  display: grid;
+  grid-gap: 16px;
+}
+
+.catalog-title {
+  font-size: $font_size-xxl;
+  line-height: $line_height-xxl;
+}
+
+.card {
+  padding: 0;
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__title {
+    font-weight: normal;
+    font-size: $font_size-xl;
+    line-height: $line_height-xl;
+    color: #1d1d1d;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  &__type-of-food {
+    padding: 0;
+    font-size: $font_size-l;
+    line-height: $line_height-l;
+    color: #626262;
+    margin: 4px 0;
+    letter-spacing: -0.1px;
+  }
+  &__time-delivery {
+    font-size: $font_size-m;
+    line-height: $line_height-l;
+    margin: 4px 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:hover {
+    background-color: #e6e5e5;
+  }
+}

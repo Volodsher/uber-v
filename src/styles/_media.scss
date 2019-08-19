@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1024px) {
+
+  .catalog-content {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+
+  .catalog-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header-main-wrap {
+    padding: 0 8px;
+  }
+
+  .logo__image {
+    width: 100px;
+  }
+
+  .input-location__input {
+    width: 200px;
+  }
+
+  .input-location {
+    padding-right: 3px;
+  }
+
+  .button-time-delivery {
+    width: 57px;
+  }
+
+  .footer {
+    display: block;
+    padding: 0 8px;
+
+    &__box {
+      width: 100%;
+    }
+  }
+
+  .select-language__choice {
+    width: 177px;
+  }
+
+  .select-language::after {
+    left: 155px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .header {
+    min-width: 320px;
+  }
+
+  .delivery-section {
+    display: none;
+  }
+
+  .logo__image {
+    width: 100px;
+  }
+
+  .button-sign-in .button-register {
+    width: 72px;
+  }
+
+  .icon-basket {
+    display: none;
+  }
+
+  .header-hidden {
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+    grid-auto-columns: 2;
+    padding: 24px 8px 0;
+    justify-items: start;
+    justify-content: start;
+  }
+
+  .input-location-hint {
+    font-size: $font_size-s;
+    line-height: $line_height-xs;
+    margin: 0 0 0 -10px;
+    padding: 0;
+  }
+
+  .input-location {
+    width: 100%;
+  }
+
+  .input-location__input {
+    width: auto;
+  }
+
+  .navigation {
+    flex-direction: column;
+  }
+
+  .navigation__second-column {
+    margin-top: 42px;
+  }
+
+  .footer__last-row {
+    flex-direction: column;
+    justify-content: center;
+    font-size: $font_size-s;
+    line-height: $line_height-xs;
+    color: #fff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .footer__last-row div {
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  .footer__stores-buttons {
+    padding: 40px 0;
+  }
+
+  .green-square {
+    height: 64px;
+    width: 64px;
+  }
+
+  .catalog-content {
+    grid-template-columns: 1fr;
+  }
+
+  .card:nth-last-child(-n + 5) {
+    display: none;
+  }
+}

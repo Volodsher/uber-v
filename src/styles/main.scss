@@ -1,7 +1,15 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "footer";
+@import "media";
+@import "main-content";
 
 body {
-  background: $c-gray;
+  background: $main-color;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  min-width: 320px;
 }
